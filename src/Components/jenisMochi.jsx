@@ -18,72 +18,84 @@ const mochiList = [
     name: "Mochi Daifuku (大福)",
     description:
       "Mochi bulat lembut isi pasta kacang merah (anko) atau isian lainnya (stroberi, matcha, custard).",
+    harga: "Rp2.000 - Rp100.000",
   },
   {
     img: ichigo,
     name: "Mochi Ichigo (いちご大福)",
     description:
       "Varian daifuku yang di dalamnya ada stroberi utuh + lapisan anko + mochi di luar",
+       harga: "Rp2.000 - Rp100.000",
   },
   {
     img: hanabira,
     name: "Mochi Hanabira (花びら餅)",
     description:
       "Mochi tipis yang dilipat seperti kelopak bunga, biasanya disajikan di acara minum teh Tahun Baru (茶会, hatsugama). Dalamnya ada pasta kacang putih dan umbi teratai.",
+       harga: "Rp2.000 - Rp100.000",
   },
   {
     img: icecream,
     name: "Mochi Ice Cream",
     description:
       "Mochi tipis dibungkus es krim sebagai isiannya — sangat populer di versi modern mochi.",
+       harga: "Rp2.000 - Rp100.000",
   },
   {
     img: kashiwa,
     name: "Mochi Kashiwa (柏餅)",
     description:
       "Mochi isi kacang merah dibungkus daun ek (kashiwa) — daun tidak dimakan, cuma memberi aroma. Tradisional disajikan saat Hari Anak-anak di Jepang (Kodomo no Hi).",
+       harga: "Rp2.000 - Rp100.000",
   },
   {
     img: kiri,
     name: "Mochi Kiri (切り餅)",
     description:
       "Mochi yang dikeringkan / dipotong kotak atau batang, bisa disimpan lama, lalu dipanaskan (panggang / rebus) saat mau dimakan.",
+       harga: "Rp2.000 - Rp100.000",
   },
   {
     img: kusa,
     name: "Mochi Kusa (草餅)",
     description:
       "Mochi yang dicampur dengan daun mugwort (yomogi), berwarna hijau dan rasa agak herbal.",
+       harga: "Rp2.000 - Rp100.000",
   },
   {
     img: sakura,
     name: "Mochi Sakura (桜餅)",
     description:
       "Mochi warna pink dibungkus daun sakura (daun bunga sakura diasinkan), biasanya muncul di musim semi / festival hanami.",
+      harga: "Rp2.000 - Rp100.000",
   },
   {
     img: warabi,
     name: "Mochi Warabi (蕨餅)",
     description:
       "Terbuat dari pati warabi (bracken) bukan ketan, teksturnya lebih jelly/kenyal. Biasanya disajikan dengan taburan kinako (tepung kacang kedelai).",
+       harga: "Rp2.000 - Rp100.000",
   },
   {
     img: gohei,
     name: "Mochi Gohei (五平餅)",
     description:
       "Mochi khas daerah Chūbu (prefektur Nagano, Gifu, Aichi) yang disajikan mengenakan saus manis-gurih (campuran gula, kecap, mirin). Biasanya disusun di tusuk bambu dan dipanggang sebagian agar permukaannya agak kecoklatan. ",
+       harga: "Rp2.000 - Rp100.000",
   },
   {
     img: hishi,
     name: "Mochi Hishi (菱餅)",
     description:
       "Mochi berbentuk wajik atau berlian yang tersusun dari tiga lapisan warna: merah muda (atas), putih (tengah), dan hijau (bawah).",
+       harga: "Rp2.000 - Rp100.000",
   },
   {
     img: gyuhi,
     name: "Mochi Gyūhi (求肥)",
     description:
       "Varian mochi yang lebih lembut dan halus dibanding mochi biasa. Terbuat dari beras ketan atau tepung ketan (mochiko), dan sering digunakan sebagai bahan dasar untuk wagashi (kue tradisional Jepang) seperti nerikiri.",
+       harga: "Rp2.000 - Rp100.000",
   },
 ];
 
@@ -130,6 +142,7 @@ export default function JenisMochi() {
               alt={mochi.name}
             />
             <h4 className="mt-2 text-center">{mochi.name}</h4>
+            <h4 className="text-center font-bold">{mochi.harga}</h4>
 
             {/* Overlay info */}
             <motion.div
